@@ -1,0 +1,10 @@
+D:\douban\DoubanCase\DoubanData\bin\Debug\netcoreapp3.1\DoubanData.deps.json
+D:\douban\DoubanCase\DoubanData\bin\Debug\netcoreapp3.1\DoubanData.dll
+D:\douban\DoubanCase\DoubanData\bin\Debug\netcoreapp3.1\DoubanData.pdb
+D:\douban\DoubanCase\DoubanData\obj\Debug\netcoreapp3.1\DoubanData.GeneratedMSBuildEditorConfig.editorconfig
+D:\douban\DoubanCase\DoubanData\obj\Debug\netcoreapp3.1\DoubanData.AssemblyInfoInputs.cache
+D:\douban\DoubanCase\DoubanData\obj\Debug\netcoreapp3.1\DoubanData.AssemblyInfo.cs
+D:\douban\DoubanCase\DoubanData\obj\Debug\netcoreapp3.1\DoubanData.csproj.CoreCompileInputs.cache
+D:\douban\DoubanCase\DoubanData\obj\Debug\netcoreapp3.1\DoubanData.dll
+D:\douban\DoubanCase\DoubanData\obj\Debug\netcoreapp3.1\DoubanData.pdb
+D:\douban\DoubanCase\DoubanData\obj\Debug\netcoreapp3.1\DoubanData.csproj.AssemblyReference.cache

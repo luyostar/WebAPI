@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\douban\DoubanCase\DoubanAPI\bin\Release\netcoreapp3.1\publish\</_PublishTargetUrl>
+    <History>True|2022-08-30T06:42:29.8758187Z;True|2022-08-27T15:14:32.3463041+08:00;True|2022-08-04T09:25:34.8191882+08:00;</History>
+  </PropertyGroup>
+</Project>
