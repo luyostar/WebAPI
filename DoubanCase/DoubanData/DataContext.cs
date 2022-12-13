@@ -26,6 +26,7 @@ namespace DoubanData
         {
             optionsBuilder.UseLoggerFactory(ConsoleLoggerFactory)
                           .EnableSensitiveDataLogging()
+                          // .UseSqlServer("Server=mycomputer;Database=EM_DATA;Uid=sa;Pwd=rexluhello")
                           ;
         }
 
@@ -33,6 +34,8 @@ namespace DoubanData
         public DbSet<Users> Db_Users { get; set; }
         public DbSet<BuyDetail> Db_BuyDetail { get; set; }
         public DbSet<Movies> Db_Movies { get; set; }
+        public DbSet<AlipayHeader> Db_AlipayHeader { get; set; }
+        public DbSet<AlipayDetail> Db_AlipayDetails { get; set; }
 
 
     }

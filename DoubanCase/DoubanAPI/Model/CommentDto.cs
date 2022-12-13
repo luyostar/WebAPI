@@ -18,4 +18,6 @@ namespace DoubanAPI.Model
         public string subContent { get; set; }
 
     }
+
+    
 }

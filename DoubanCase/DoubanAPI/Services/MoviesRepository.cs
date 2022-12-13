@@ -19,7 +19,7 @@ namespace DoubanAPI.Services
         public async Task<List<Movies>> GetAllMoviesAsync()
         {
             var items = _dbContext.Db_Movies as IQueryable<Movies>;
-            return await items.ToListAsync();
+            return await items.OrderByDescending(x=>x.Cid).ToListAsync();
         }
 
         public async Task<Movies> GetMoviesByMidAsync(string mId)
@@ -42,6 +42,7 @@ namespace DoubanAPI.Services
             }
             var items = _dbContext.Db_Movies
                 .Where(x => x.TypeId == moviesParameters.TypeId)
+                .OrderByDescending(x=>x.Cid)
                 .Skip(moviesParameters.PageSize * (moviesParameters.PageNumber - 1))
                 .Take(moviesParameters.PageSize)
                 ;

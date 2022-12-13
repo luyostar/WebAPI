@@ -15,6 +15,7 @@ using Microsoft.AspNetCore.Cors;
 namespace DoubanAPI.Controllers
 {
     // [EnableCors("Domain")]
+    //[AllowCrossSiteJson]
     [Route("api/[controller]")]
     [ApiController]
     public class UsersController : ControllerBase
@@ -148,7 +149,7 @@ namespace DoubanAPI.Controllers
 
         //以下添加对各个Action的访问权限(跨域访问),像POST，PUT，DELETE在动作前都会有个预检(preflight)options请求，
         //所以要加允许跨域attribute，否则会失败
-        [HttpOptions("login/{id}", Name = nameof(UserLoginOptions))]
+        [HttpOptions("login/{id}",Name =nameof(UserLoginOptions))]
         [AllowCrossSiteJson]
         public IActionResult UserLoginOptions()
         {
@@ -162,6 +163,7 @@ namespace DoubanAPI.Controllers
         }
 
         [HttpOptions("{id}", Name = nameof(AllOptions))]
+        //[HttpOptions("{id}")]
         [AllowCrossSiteJson]
         public IActionResult AllOptions()
         {
@@ -169,7 +171,7 @@ namespace DoubanAPI.Controllers
         }
 
 
-        [HttpOptions(Name = nameof(UserOptions))]
+        [HttpOptions("",Name =nameof(UserOptions))]
         [AllowCrossSiteJson]
         public IActionResult UserOptions()
         {
